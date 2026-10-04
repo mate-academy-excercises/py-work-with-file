@@ -21,3 +21,4 @@ def create_report(data_file_name: str, report_file_name: str) -> None:
     output.write("supply" + "," + str(report_dict["supply"]) + "\n"
                  + "buy" + "," + str(report_dict["buy"]) + "\n"
                  + "result" + "," + str(result) + "\n")
+    output.close()
